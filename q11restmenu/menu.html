@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body{
+            text-align: center;
+            background: gold;
+            color: black;
+            font-family: cursive;
+            text-decoration: underline solid black;
+        }
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu div{
+            width: 300px;
+            padding: 25px;
+            background: white;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        @media(max-width:500px){
+            body{
+                background: palevioletred;
+            }
+            .menu{
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu div{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <div class="menu">
+        <div>🍕 PIZZA <br>₹250</div>
+        <div>🍔 BURGER <br>₹400</div>
+        <div>🌭 HOTDOGS <br>₹300</div>
+        <div> 🍝 PASTA <br>500</div>
+        <div> 🥪 SANDWICH <br>250</div>
+        <div> 🍧 ICECREAM <br>100</div>
+    </div>
+    
+</body>
+</html>

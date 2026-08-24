@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemes</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: aliceblue;
+            color: black;
+        }
+        nav{
+            background: paleturquoise;
+        }
+        .cards{
+            background: black;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        @media (prefers-color-scheme: light){
+            body{
+                background:lawngreen;
+            }
+            nav{
+                background: gold;
+            }
+            .cards{
+                background: olive;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">AboutUS</a>
+        <a href="#">Login</a>
+    </nav>
+    <div class="cards">
+        <h1>Welcome</h1>
+        <p>page features change with your scheme</p>
+    </div>
+    
+</body>
+</html>

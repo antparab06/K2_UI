@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  font-family: Arial;
+  padding: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: move 5s infinite alternate;
+  transition: .5s;
+}
+th, td {
+  padding: 15px;
+  border: 1px solid #333;
+  transition: .4s;
+}
+td::before {
+  content: "★ ";
+}
+tr:nth-child(even) {
+  background: lightblue;
+}
+tr:hover {
+  transform: scale(1.02);
+  background: lightgreen;
+}
+td:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px #777;
+}
+@keyframes move {
+  from { background: #eee; }
+  to { background: lightyellow; }
+}
+</style>
+</head>
+<body>
+    <h1>Student Data</h1>
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Course</th>
+  <th>Marks</th>
+</tr>
+<tr>
+  <td>Hansika</td>
+  <td>BSc CS</td>
+  <td>85</td>
+</tr>
+<tr>
+  <td>Antara</td>
+  <td>BSc CS</td>
+  <td>90</td>
+</tr>
+<tr>
+  <td>Amit</td>
+  <td>BSc CS</td>
+  <td>78</td>
+</tr>
+<tr>
+  <td>sakshi</td>
+  <td>BSc CS</td>
+  <td>88</td>
+</tr>
+</table>
+</body>
+</html>

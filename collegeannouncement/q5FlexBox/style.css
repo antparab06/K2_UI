@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 4px solid black;
+    outline: 2px thin blue;
+}
+.box{
+    text-align: center;
+
+}
+.box1{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    border: 3px dashed chartreuse;
+    outline: 2px solid blueviolet;
+}
+.box2{
+    width: 140px;
+    height: 120px;
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid black;
+    outline: 2px solid cadetblue;
+}
+.box3{
+    width: 160px;
+    height: 110px;
+    padding: 40px;
+    margin: 15px;
+    border: 2px dotted  blue;
+    outline: 4px thick white;
+}

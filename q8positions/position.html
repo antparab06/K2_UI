@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .parent{
+            position: relative;
+            width: 1300px;
+            height: 700px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPf_062JKWOBQr9rKxfyjLtlwzCn6Wwx_fJ6vQDIAgQ&s=10");
+            background-size: cover;
+        }
+        .content{
+            position: absolute;
+            top: 100px;
+            left: 150px;
+            background: palevioletred;
+            padding: 30px;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 70px;
+            right: 200px;
+            padding: 20px;
+            color: aquamarine;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="content">
+            <h2>Content box</h2>
+            <p>using absolute , fixed and relative positioning </p>
+        </div>
+    </div>
+    <div class="fixed">Fixed element</div>
+</body>
+</html>

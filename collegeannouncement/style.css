@@ -1,0 +1,42 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    background-color: azure;
+    outline: 3px solid steelblue;
+
+}
+h1{
+color: chocolate;
+text-decoration: underline;
+}
+.announcement1{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px;
+    color: black;
+    font-size: 18px;
+}
+.announcement2{
+    background-color: linen;
+    border: 5px solid steelblue;
+    padding: 20px;
+    margin: 25px;
+    color: forestgreen;
+    font-size: 20px;
+}
+.announcement3{
+    background-color:darkcyan;
+    border: 4px solid blueviolet;
+    padding: 30px;
+    margin: 30px;
+    color: darkgoldenrod;
+    font-size: 25px;
+
+}

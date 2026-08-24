@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.hero {
+  height: 100vh;
+  background: url("https://picsum.photos/id/1018/1200/700") center/cover;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: rgba(0,0,0,.5);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  text-align: center;
+  padding-top: 180px;
+}
+button {
+  position: relative;
+  padding: 12px 25px;
+  background: orange;
+  border: 0;
+}
+@media (max-width: 600px) {
+  .hero {
+    background: url("https://picsum.photos/id/1015/600/800")cover;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .content {
+    padding-top: 100px;
+  }
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="content">
+    <h1>Welcome to Our Website</h1>
+    <p>This is my website!!</p>
+    <button>Explore Now</button>
+  </div>
+</section>
+</body>
+</html>

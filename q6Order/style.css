@@ -1,0 +1,36 @@
+.products{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:nowrap;
+    gap: 10px;
+    width: 50%;
+    margin: 10px auto;
+}
+.product{
+    width: 110px;
+    height: 70px;
+    padding: 15%;
+    border: 2px dashed slateblue;
+    text-align: center;
+    background-color: beige;
+}
+.p1{
+    order: 3;
+}
+.p2{
+    order: 1;
+}
+.p3{
+    order: 2;
+}
+.p4{
+    order: 6;
+}
+.p5{
+    order: 4;
+}
+.p6{
+    order: 5;
+}

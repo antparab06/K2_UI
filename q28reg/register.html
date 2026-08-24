@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  font-family: Arial;
+  background: linear-gradient(45deg, lightblue, pink, lightgreen);
+  background-size: 300% 300%;
+  animation: bg 6s infinite alternate;
+}
+.form {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  transition: .5s;
+}
+.form:hover {
+  transform: scale(1.03);
+}
+.field {
+  padding: 10px;
+}
+.field:nth-child(even) {
+  background: #eee;
+}
+.field label::before {
+  content: "★ ";
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+input:hover,
+input:focus {
+  transform: scale(1.03);
+  border: 2px solid blue;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  transition: .3s;
+}
+button:hover {
+  transform: translateY(-5px) skew(2deg);
+  background: lightgreen;
+}
+@keyframes bg {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="form">
+  <h1>Registration</h1>
+
+  <div class="field">
+    <label>Name</label>
+    <input type="text">
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <input type="email">
+  </div>
+
+  <div class="field">
+    <label>Password</label>
+    <input type="password">
+  </div>
+
+  <div class="field">
+    <label>Phone</label>
+    <input type="tel">
+  </div>
+
+  <button>Register</button>
+</div>
+
+</body>
+</html>

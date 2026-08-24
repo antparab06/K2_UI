@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: white;
+}
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 18px;
+  background: #222;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: lightblue;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+.card {
+  width: 200px;
+  padding: 25px;
+  background: white;
+  border: 2px solid #333;
+  box-shadow: 0 5px 10px #aaa;
+}
+@media (max-width: 600px) {
+  body {
+    background: lightyellow;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    background: lightgreen;
+  }
+}
+@media (orientation: landscape) {
+  .hero {
+    padding: 50px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: white;
+  }
+  .card {
+    background: #333;
+  }
+}
+</style>
+
+</head>
+<body>
+    <nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>My Responsive Website</h1>
+  <p>A website that changes with the screen.</p>
+</section>
+
+<div class="cards">
+  <div class="card"><h2>Project 1</h2><p>Web Design</p></div>
+  <div class="card"><h2>Project 2</h2><p>Development</p></div>
+  <div class="card"><h2>Project 3</h2><p>Technology</p></div>
+</div>
+</body>
+</html>

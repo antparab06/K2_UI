@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+nav {
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  background: black;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 20px;
+}
+.hero {
+  position: relative;
+  height: 500px;
+  background: url("https://picsum.photos/id/1016/1200/700") cover;
+}
+.overlay {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  color: white;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+p {
+  line-height: 1.8;
+}
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+}
+</style>
+</head>
+<body>
+    <nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  <div class="overlay">
+    <h1>Beautiful World</h1>
+    <p>Explore new places and create memories.</p>
+  </div>
+</div>
+
+<button>Top</button>
+</body>
+</html>

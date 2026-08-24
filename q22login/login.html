@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: url("https://picsum.photos/id/1019/1200/800") cover;
+}
+.login {
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 15px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: steelblue;
+  color: white;
+  border: 0;
+}
+@media (max-width: 500px) {
+  .login {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  body {
+    background: lightblue;
+  }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="login">
+  <h1>Login</h1>
+  <label>Email</label>
+  <input type="email">
+  <label>Password</label>
+  <input type="password">
+  <button>Login</button>
+</div>
+</body>
+</html>

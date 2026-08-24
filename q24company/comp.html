@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #222;
+  padding: 18px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  height: 300px;
+  background: url("https://picsum.photos/id/1043/1200/500") cover;
+  color: white;
+  text-align: center;
+  padding: 80px;
+  box-sizing: border-box;
+}
+.about {
+  padding: 30px;
+  text-align: center;
+}
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  width: 200px;
+  padding: 25px;
+  margin-bottom: 30px;
+  background: lightblue;
+  border: 2px solid #333;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+    <nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Our Company</h1>
+  <p>We provide quality services.</p>
+</section>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p>We create simple and useful solutions for our customers.</p>
+</section>
+
+<div class="services">
+  <div class="card"><h3>Web Design</h3><p>Creative websites.</p></div>
+  <div class="card"><h3>Development</h3><p>Modern applications.</p></div>
+  <div class="card"><h3>Support</h3><p>24/7 assistance.</p></div>
+</div>
+
+</body>
+</html>
